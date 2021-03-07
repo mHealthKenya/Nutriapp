@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/nutrition"
+    android:layout_alignParentBottom="true"
+    >
+
+
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/regtoolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?android:attr/actionBarSize"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+
+
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/regrl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".Login.Login">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50sp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@android:color/transparent"
+                android:gravity="center_vertical|center_horizontal|center"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <LinearLayout
+                    android:id="@+id/llregin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/colorPrimaryTrans"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/regrl3"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginRight="20sp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Provide your login details below"
+                            android:textSize="20sp"
+                            android:layout_marginBottom="30sp"
+                            android:textStyle="bold|italic"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content" />
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="10sp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Email"
+                                android:textSize="20sp"
+
+                                android:textColor="@color/white"
+                                android:layout_height="wrap_content" />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/login_email"
+                                android:textColor="@color/white"
+                                android:hint="Email"
+                                android:inputType="textEmailAddress"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="10sp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Password"
+                                android:textSize="20sp"
+
+                                android:textColor="@color/white"
+                                android:layout_height="wrap_content" />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/login_password"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:textColor="@color/white"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="10sp"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:text="LOGIN"
+                                android:id="@+id/loginButton"
+                                android:onClick="Login"
+                                android:theme="@style/PrimaryButton"
+                                android:elevation="30dp"
+                                android:background="@drawable/rounded_button"
+                                android:layout_marginBottom="15sp"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
